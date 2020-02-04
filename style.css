@@ -1,148 +1,420 @@
-        * {
-            font-family: 'PT Serif', serif;
-            padding: 0;
-            margin: 0;
-        }
-        
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-        }
-        
-        body {
-            text-align: center;
-        }
-        
-        main {
-            height: 100%;
-        }
-        
-        section {
-            height: 100%;
-            padding: 4em 2em;
-            position: relative;
-            width: 100%;
-        }
-        
-        header {
-            background: linear-gradient(to bottom, #25a78d, #64ccb2, #09d19f);
-            padding: 1em 2em;
-            width: 100%;
-            border: none;
-        }
-        
-        #logo {
-            background: url(./img/logo.png) no-repeat;
-            background-size: contain;
-            float: left;
-            height: 2.125rem;
-            margin-left: 1.85em;
-            width: 20%;
-        }
-        
-        nav#menu-nav {
-            display: inline-block;
-            text-align: right;
-            width: 70%;
-        }
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        ul li {
-            display: inline-block;
-            padding: 0.3em 1em;
-        }
-        
-        ul li a {
-            color: rgba(255, 255, 255, 1);
-            font-size: 0.90rem;
-            font-weight: 300;
-            letter-spacing: 0.2rem;
-            padding: 0.3em 1 em;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        
-        ul li a:hover,
-        ul li a:active {
-            color: rgb(12, 61, 61);
-        }
-        
-        #vuelos {
-            background: linear-gradient(to bottom, #0cd2a1, #73e4ac, #89eca5, #89f58e, #b2eb9e, #d0f199, #eaf881, rgba(206, 236, 245, 0), #6ffad3 90%);
-        }
-        
-        #globo1 a img {
-            width: 3em;
-            position: absolute;
-            left: 10em;
-            top: 20em;
-        }
-        
-        #globo2 a img {
-            width: 3em;
-            position: absolute;
-            right: 100px;
-            top: 30px;
-        }
-        
-        #imagen1 a img {
-            width: 15em;
-            position: absolute;
-            right: 10px;
-            bottom: 35px;
-        }
-        
-        #imagen2 a img {
-            width: 15em;
-            position: absolute;
-            left: 2em;
-            bottom: 3em;
-        }
-        
-        #formulario {
-            text-align: center;
-            width: 45em;
-        }
-        
-        #formulario,
-        #calendario,
-        input,
-        select {
-            width: 28em;
-            position: relative;
-            padding: 1rem;
-            margin: 0.45em;
-            transform: translateX(15em);
-            border-radius: 25px;
-            text-decoration: none;
-            border: none;
-        }
-        
-        #calendario {
-            background-color: #fff;
-            width: 24em;
-            transform: translateX(12.8em);
-        }
-        
-        select {
-            width: 30.8em;
-            background-image: url(./svg/user-friends-solid.svg);
-            background-repeat: no-repeat;
-            background-position: 4px center;
-            background-size: 15px;
-        }
-        
-        input {
-            background-image: url(./svg/search-solid.svg);
-            background-repeat: no-repeat;
-            background-position: 4px center;
-            background-size: 15px;
-            width: 28.8em;
-            height: 1, 90em;
-        }
+* {
+    font-family: 'PT Serif', serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 97.6%;
+}
+
+body {
+    text-align: center;
+}
+
+main {
+    height: 100%;
+}
+
+section {
+    height: 90%;
+    padding: 2em 2em;
+    position: relative;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(to bottom, #25a78d, #64ccb2, #09d19f);
+    padding: 1em 2em;
+    width: 100%;
+    border: none;
+}
+
+#logo {
+    background: url(./img/logo.png) no-repeat;
+    background-size: contain;
+    float: left;
+    height: 2.125rem;
+    margin-left: 1.85em;
+    width: 20%;
+}
+
+nav#menu-nav {
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+}
+
+#ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ulmenu li {
+    display: inline-block;
+    padding: 0.3em 1em;
+}
+
+#ulmenu li a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.90rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    padding: 0.3em 1 em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#ulmenu li a:hover,
+#ulmenu li a:active {
+    color: rgb(12, 61, 61);
+}
+
+#vuelos {
+    background: linear-gradient(to bottom, #0cd2a1, #73e4ac, #89eca5, #89f58e, #b2eb9e, #d0f199, #eaf881, rgba(206, 236, 245, 0), #6ffad3 90%);
+}
+
+#globo1 a img {
+    width: 3em;
+    position: absolute;
+    left: 10em;
+    top: 20em;
+    animation: all 1s;
+}
+
+#globo2 a img {
+    width: 3em;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
+
+#imagen1 a img {
+    width: 15em;
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+}
+
+#imagen2 a img {
+    width: 15em;
+    position: absolute;
+    left: 2em;
+    bottom: 3em;
+}
+
+#formulario {
+    text-align: center;
+    width: 45em;
+}
+
+#formulario,
+#calendario,
+input,
+select {
+    width: 28em;
+    position: relative;
+    padding: 1rem;
+    margin: 0.40em;
+    transform: translateX(15em);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+}
+
+#calendario {
+    background-color: #fff;
+    width: 24em;
+    transform: translateX(12.8em);
+}
+
+#calendario i {
+    padding-right: 1rem;
+}
+
+select {
+    width: 24em;
+    background-image: url(./svg/user-friends-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    border: none;
+    text-decoration: none;
+    padding-left: 2em;
+    z-index: 3;
+    transform: translateX(11em);
+    position: absolute;
+    left: 5.8em;
+}
+
+#boton {
+    background: linear-gradient(to top, #f5899f, #f0aebb);
+    width: 15em;
+    height: 3.8em;
+    border-radius: 25px;
+    z-index: 0;
+    text-align: right;
+    bottom: 0, 25em;
+    right: 6em;
+    transform: translateX(22em);
+    font-size: 0.85em;
+    border: none;
+    margin-top: 0.40em;
+    padding-right: 2em;
+}
+
+input {
+    background-image: url(./svg/search-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    width: 28.8em;
+    padding-left: 2em;
+    transform: translateX(15em);
+}
+
+article {
+    column-count: 3;
+    column-gap: 6em;
+    padding-top: 3em;
+}
+
+article #imagen3 {
+    background-image: url(./img/imagen3.jpg);
+    background-repeat: no-repeat;
+}
+
+article #imagen4 {
+    background-image: url(./img/imagen4-1.jpg);
+}
+
+article #imagen5 {
+    background-image: url(./img/imagen3-4.png);
+}
+
+article div {
+    width: 13rem;
+    height: 13rem;
+    background-size: cover;
+    margin: 0 auto 1em;
+    border: 0.15em solid rgb(248, 248, 248);
+    box-shadow: 0.1px 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+p {
+    width: 13em;
+    padding-left: 5em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    text-transform: unset;
+    font-size: 2rem;
+}
+
+#blog #fotos img {
+    float: center;
+    width: 10%;
+    height: 100px;
+    margin: 1rem;
+}
+
+#degradado {
+    background: linear-gradient(to right, #2abc97, #4bc48d, #6acc81, #7fd178, #9fd76a);
+    height: 10em;
+    width: 60em;
+    float: center;
+    margin-left: 10em;
+    margin-top: 3em;
+}
+
+#degradado,
+#mio,
+#este {
+    margin: 2em auto 1em;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    padding: 3em auto 2em;
+}
+
+#degradado a {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 500;
+    background: linear-gradient(to top, #f5899f, #f0aebb);
+    border-radius: 2.5em;
+    color: #fff;
+    width: 5em;
+    float: right;
+    text-decoration: none;
+    text-transform: unset;
+    margin: 1.50em auto 3em;
+    padding: 0.80em 0.80em;
+    transform: translate(-4em, -5em)
+}
+
+#degradado a:hover {
+    color: #FF0000;
+    text-decoration: unset
+}
+
+#botones {
+    height: 10em;
+    background: #fff;
+    width: 60em;
+    float: center;
+    margin-left: 10em;
+}
+
+#navegacion {
+    list-style-type: none;
+    float: center;
+}
+
+#navegacion li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#navegacion li a {
+    font-size: 0.90rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 3.5em;
+}
+
+#navegacion li img {
+    height: 2em;
+    margin: 4em auto 3em;
+    float: center;
+    margin-left: 1.3em;
+}
+
+#solo {
+    float: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 10em;
+    margin-top: 1.5em;
+}
+
+#guia {
+    height: 11em;
+    background: black;
+    columns: 3;
+    column-gap: 6em;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#ayuda,
+#empresa,
+#soporte {
+    width: 14em;
+}
+
+#ayuda ul li a {
+    text-decoration: none;
+    color: white
+}
+
+#ayuda ul li {
+    height: 1em;
+    font-style: normal;
+    color: white;
+    padding: 0.40em;
+}
+
+#subrayado,
+#subrayado2 {
+    margin-top: 1em;
+    color: white;
+}
+
+#ayuda {
+    color: white;
+}
+
+#subrayado2 {
+    border-left: 1px solid blue;
+}
+
+#subrayado {
+    border-left: 1px solid blue;
+}
+
+#empresa ul li a {
+    text-decoration: none;
+    color: white
+}
+
+#empresa ul li {
+    height: 1em;
+    font-style: normal;
+    color: white;
+    padding: 0.40em;
+    margin-top: 0.40em;
+}
+
+#empresa {
+    color: white;
+}
+
+#soporte ul li a {
+    text-decoration: none;
+    color: white
+}
+
+#soporte ul li {
+    height: 1em;
+    font-style: normal;
+    color: white;
+    padding: 0.40em;
+    margin-top: 0.40em;
+}
+
+#soporte {
+    color: white;
+}
+
+#footer {
+    background: black;
+    width: 84.3em;
+    height: 5em;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#iconosfinal li {
+    display: inline-block
+}
+
+#footer #iconosfinal li i {
+    color: white;
+    padding-right: 1em;
+}
+
+#texto {
+    margin-right: 9em;
+}
+
+#iconosfinal li i {
+    font-size: 1.50em;
+}
