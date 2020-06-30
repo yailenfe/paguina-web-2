@@ -1,33 +1,29 @@
 * {
-    font-family: 'PT Serif', serif;
+    font-family:  'Roboto', sans-serif;;
     padding: 0;
     margin: 0;
+  
+}
+ body {
+   height: 100vh;
+   text-align: center;
+
 }
 
-html,
-body {
-    height: 100%;
-    width: 97.6%;
-}
-
-body {
-    text-align: center;
-}
-
-main {
+#contenido {
     height: 100%;
 }
 
 section {
-    height: 90%;
-    padding: 2em 2em;
+    height: 80%;
     position: relative;
     width: 100%;
 }
 
 header {
     background: linear-gradient(to bottom, #25a78d, #64ccb2, #09d19f);
-    padding: 1em 2em;
+    padding: 1em 1em;
+    box-sizing: border-box;
     width: 100%;
     border: none;
 }
@@ -76,7 +72,12 @@ nav#menu-nav {
 #vuelos {
     background: linear-gradient(to bottom, #0cd2a1, #73e4ac, #89eca5, #89f58e, #b2eb9e, #d0f199, #eaf881, rgba(206, 236, 245, 0), #6ffad3 90%);
 }
-
+.titulo{
+    padding-bottom: 15px;
+}
+.subtitulo{
+    padding-bottom: 15px;
+}
 #globo1 a img {
     width: 3em;
     position: absolute;
@@ -109,6 +110,11 @@ nav#menu-nav {
 #formulario {
     text-align: center;
     width: 45em;
+    position: absolute;
+    top:20%;
+    transform: translate3d(-15%,0,0);
+    left: 15%;
+  
 }
 
 #formulario,
@@ -118,7 +124,7 @@ select {
     width: 28em;
     position: relative;
     padding: 1rem;
-    margin: 0.40em;
+    margin: 0.50em;
     transform: translateX(15em);
     border-radius: 25px;
     text-decoration: none;
@@ -132,7 +138,8 @@ select {
 }
 
 #calendario i {
-    padding-right: 1rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
 }
 
 select {
@@ -143,17 +150,18 @@ select {
     background-size: 20px;
     border: none;
     text-decoration: none;
-    padding-left: 2em;
+    padding-left: 3em;
     z-index: 3;
     transform: translateX(11em);
     position: absolute;
-    left: 5.8em;
+    box-sizing: border-box;
+    left: 5.6em;
 }
 
 #boton {
     background: linear-gradient(to top, #f5899f, #f0aebb);
     width: 15em;
-    height: 3.8em;
+    height: 3.6em;
     border-radius: 25px;
     z-index: 0;
     text-align: right;
@@ -162,7 +170,7 @@ select {
     transform: translateX(22em);
     font-size: 0.85em;
     border: none;
-    margin-top: 0.40em;
+    margin-top: 0.49em;
     padding-right: 2em;
 }
 
@@ -175,11 +183,18 @@ input {
     padding-left: 2em;
     transform: translateX(15em);
 }
-
+ #hoteles{
+padding: 50px 60px;
+box-sizing: border-box;
+ }
 article {
     column-count: 3;
-    column-gap: 6em;
-    padding-top: 3em;
+    column-gap: 6em; 
+    
+    margin-top: 9em;
+}
+.title-hotels{
+    margin-top: 30px;
 }
 
 article #imagen3 {
@@ -189,25 +204,30 @@ article #imagen3 {
 
 article #imagen4 {
     background-image: url(./img/imagen4-1.jpg);
+    background-repeat: no-repeat;
 }
 
 article #imagen5 {
     background-image: url(./img/imagen3-4.png);
+    
 }
 
 article div {
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
     background-size: cover;
-    margin: 0 auto 1em;
+    margin: 0 auto 20px;
     border: 0.15em solid rgb(248, 248, 248);
     box-shadow: 0.1px 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.1);
     text-align: center;
+   
+    box-sizing: border-box;
+ 
 }
 
 p {
     width: 13em;
-    padding-left: 5em;
+    padding-left: 10em;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -268,7 +288,7 @@ h3 {
     background: #fff;
     width: 60em;
     float: center;
-    margin-left: 10em;
+    margin-left:30em;
 }
 
 #navegacion {
@@ -308,10 +328,10 @@ h3 {
 }
 
 #guia {
+    width: 100%;
     height: 11em;
     background: black;
     columns: 3;
-    column-gap: 6em;
     display: flex;
     justify-content: space-around;
     text-align: justify;
@@ -319,17 +339,21 @@ h3 {
 
 ul li {
     list-style-type: none;
+    margin: 0;
 }
 
 #ayuda,
 #empresa,
 #soporte {
     width: 14em;
+    margin-top: 30px;
 }
 
 #ayuda ul li a {
     text-decoration: none;
-    color: white
+    color: white;
+    margin: 0;
+    
 }
 
 #ayuda ul li {
@@ -384,7 +408,7 @@ ul li {
     font-style: normal;
     color: white;
     padding: 0.40em;
-    margin-top: 0.40em;
+    margin-top: 20sem;
 }
 
 #soporte {
@@ -393,26 +417,30 @@ ul li {
 
 #footer {
     background: black;
-    width: 84.3em;
+    width: 100%;
     height: 5em;
     display: flex;
     color: white;
     text-align: center;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-evenly;
+    
+    
 }
 
 #iconosfinal li {
-    display: inline-block
+    display: inline-block;
+    padding-top: 50px;
 }
 
 #footer #iconosfinal li i {
     color: white;
     padding-right: 1em;
+   
 }
 
 #texto {
-    margin-right: 9em;
+    margin-right: 2.5em;
+    padding-top: 50px;
 }
 
 #iconosfinal li i {
